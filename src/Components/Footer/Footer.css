@@ -1,0 +1,14 @@
+.footer {
+    display: flex;
+    justify-content: center; /* Horizontally centers the text */
+    align-items: center;     /* Vertically centers the text */
+    height: 100px;           /* You can adjust this height as needed */
+    background-color: #f1f1f1; /* Optional: Add a background color */
+  }
+  
+  .copyright {
+    text-align: center;
+    font-size: 14px;         /* Adjust the font size as needed */
+    color: #333;             /* Adjust the text color as needed */
+  }
+  

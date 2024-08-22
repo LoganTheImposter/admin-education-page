@@ -1,0 +1,131 @@
+.contact-form-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.main-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.map-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.map-display {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    height: 200px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+}
+
+.map-frame {
+    width: 100%;
+    height: 100%;
+}
+
+.map-input {
+    margin-top: 10px;
+}
+
+.map-input textarea,
+.details-section textarea {
+    width: 100%;
+    height: 150px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+.details-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.tools {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 10px;
+}
+
+.tools button {
+    padding: 10px;
+    border: 1px solid black;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.tools button:hover {
+    background-color: lightgrey;
+}
+
+.emoji-picker {
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: transparent; /* Set background to transparent */
+    border: none; /* Remove border */
+    padding: 5px; /* Minimal padding to keep layout */
+}
+
+.emoji-picker button {
+    background: none; /* No background color */
+    border: none; /* No border */
+    cursor: pointer;
+}
+
+.emoji-picker button:hover {
+    background-color: transparent; /* Maintain transparent on hover */
+    color: #007bff; /* Optional: change color on hover to indicate active selection */
+}
+
+
+.input-popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: auto;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.input-popup input {
+    margin-right: 10px;
+    padding: 5px;
+    width: 250px; /* Adjust width as needed */
+}
+
+.input-popup button {
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.input-popup button:hover {
+    background-color: #0056b3;
+}

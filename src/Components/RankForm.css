@@ -1,0 +1,44 @@
+.rank-form-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.rank-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0;
+}
+
+.rank-list li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.rank-list input[type="number"] {
+    margin-left: 10px;
+    width: 50px;
+}
+
+.rank-list button {
+    margin-left: 10px;
+    padding: 5px;
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.rank-list button:hover {
+    background-color: #c82333;
+}

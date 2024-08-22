@@ -1,0 +1,164 @@
+.app {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.15);
+  max-width: 600px;
+  margin: 40px auto;
+  position: relative;
+  overflow-y: auto; /* Allow scrolling if content overflows */ 
+  max-height: 80vh; /* Limit the height to ensure scrollbar appears */
+}
+
+.app h1 {
+  text-align: center;
+  color: #444;
+  margin-bottom: 24px;
+  font-family: 'Arial', sans-serif;
+  font-weight: 600;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form div {
+  margin-bottom: 16px;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 8px;
+  display: block;
+  color: #333;
+  font-family: 'Arial', sans-serif;
+}
+
+input[type="text"],
+input[type="file"],
+select,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+textarea {
+  resize: vertical;
+  height: 120px;
+  overflow-y: auto; /* Add scrollbar if content overflows */
+}
+
+button[type="submit"] {
+  padding: 12px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1em;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+  font-family: 'Arial', sans-serif;
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+.close-button {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: none;
+  border: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: #444;
+}
+
+.error-message {
+  color: red;
+  margin-bottom: 15px;
+  font-weight: bold;
+  font-family: 'Arial', sans-serif;
+}
+
+.editor-buttons {
+  margin: 15px 0;
+  display: flex;
+  gap: 10px;
+}
+
+.editor-buttons button {
+  padding: 8px;
+  background-color: #f0f0f0;
+  border: 1px solid #bbb;
+  color: #333;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1.2em;
+  transition: background-color 0.3s ease;
+  font-family: 'Arial', sans-serif;
+}
+
+.editor-buttons button:hover {
+  background-color: #e0e0e0;
+}
+
+.emoji-picker {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 10px;
+  max-height: 200px;
+  overflow-y: auto;
+  border-top: 1px solid #ddd;
+  padding-top: 10px;
+}
+
+.emoji-picker .emoji-category {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.emoji-picker .emoji {
+  font-size: 1.5em;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.emoji-picker .emoji:hover {
+  transform: scale(1.2);
+}
+
+.emoji-category-buttons {
+  display: flex;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.emoji-category-buttons button {
+  padding: 8px;
+  background-color: #f8f8f8;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 1.5em;
+  transition: background-color 0.3s ease;
+}
+
+.emoji-category-buttons button.active {
+  background-color: #007bff;
+  color: white;
+  border-color: #0056b3;
+}
+
+.emoji-category-buttons button:hover {
+  background-color: #e0e0e0;
+}

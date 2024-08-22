@@ -1,0 +1,86 @@
+/* src/Components/VisitorStats.css */
+.visitor-stats-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    background-color: #eef1f5;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    margin: 40px auto;
+    max-width: 90%;
+  }
+  
+  .visitor-stats-container h2 {
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .visitor-stats {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap; /* Allows wrapping to the next line */
+  }
+  
+  .stat-box {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    border-radius: 12px;
+    width: 200px;
+    height: 150px;
+    background-color: #fff;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  }
+  
+  .stat-box strong {
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    font-size: 16px;
+    color: #fff;
+    font-weight: bold;
+  }
+  
+  .stat-box div {
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
+    font-size: 120px;
+    color: rgba(255, 255, 255, 0.8);
+    opacity: 0.5;
+  }
+  
+  /* Different colors for each card */
+  .stat-box:nth-child(1) {
+    background-color: #6c63ff; /* Purple for daily */
+  }
+  
+  .stat-box:nth-child(2) {
+    background-color: #4caf50; /* Green for monthly */
+  }
+  
+  .stat-box:nth-child(3) {
+    background-color: #f44336; /* Red for yearly */
+  }
+  
+  /* Responsive design for mobile devices */
+  @media (max-width: 600px) {
+    .visitor-stats {
+      flex-direction: column; /* Stack boxes vertically on small screens */
+      align-items: center; /* Center boxes on the page */
+    }
+  
+    .stat-box {
+      width: 90%; /* Full width on mobile, minus some margin */
+      margin-bottom: 20px; /* Add space between boxes */
+    }
+  }
+  
